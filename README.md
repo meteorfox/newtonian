@@ -20,10 +20,14 @@ or,
 
 
 	(use 'newtonian.particle-system)
-	(use 'newtonian.utils)
+	(require 'newtonian.utils)
 	(import 'newtonian.utils.Vector2D)
 
-	;; Example
+        ;; Start 
+
+	(-main)
+
+	;; Things to play with
 
 	;; To add repelling field, use negative mass
 
