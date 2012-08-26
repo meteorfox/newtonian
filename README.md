@@ -2,6 +2,9 @@
 
 Particle System in Clojure using Quil.
 
+![Particles](http://img525.imageshack.us/img525/3210/screenshotfrom201208252.png)
+
+
 Still work in progress.
 
 Based on https://github.com/jsoverson/JavaScript-Particle-System
