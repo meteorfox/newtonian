@@ -19,7 +19,7 @@ or,
 	For interactive mode:
 
 	lein deps
-	lein repl
+	lein repl (or if in Emacs, nrepl-jack-in, or clojure-jack-in)
 
 
 	(use 'newtonian.particle-system)
@@ -38,7 +38,7 @@ or,
 
 	;; for attracting field, use positive mass
 
-	(add-field (Vector2D. 280.0 285.0) 100.0)
+	(add-field (Vector2D. 280.0 285.0) 500.0)
 
 	;; To remove last field added
 	(swap! fields pop)
@@ -49,5 +49,13 @@ or,
 	;; To remove last particle emitter added
 	(swap! emitters pop)
 
+## TODO
 
-
+* Aggregate force of all fields in particles, right now one field influence at a time
+* Drag-and-drop support for Paritcle Emitters and Fields
+* Dynamic sizing and coloring of particles with GUI
+* Dynamic force field adjustment with GUI.
+* Improve documentation
+* Settings to change frame rate, window size, renderer, etc
+* Preferences to change background color, number of particles, color of fields and emitters.
+* Collapse particle system state in a map, to allow multiple particles systems. ???
