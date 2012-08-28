@@ -2,7 +2,7 @@
 
 Particle System in Clojure using Quil.
 
-![Particles](http://img525.imageshack.us/img525/3210/screenshotfrom201208252.png)
+![Particles](http://img402.imageshack.us/img402/1473/screenshotfrom201208272.png)
 
 Still work in progress.
 
