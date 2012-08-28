@@ -11,7 +11,7 @@ Based on https://github.com/jsoverson/JavaScript-Particle-System
 
 # Live performance
 
-![Newtonian Dance](http://www.youtube.com/watch?v=xiqWclsXdcc)
+http://www.youtube.com/watch?v=xiqWclsXdcc
 
 
 ## Usage
