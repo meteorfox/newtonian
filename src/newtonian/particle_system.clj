@@ -33,7 +33,9 @@
       (swap! particles into new-particles))))
 
 (defn submit-to-fields [p fields]
-  (reduce corporum/influence p fields))
+  (reduce corporum/influence
+          (assoc p :accel (Vector2D. 0.0 0.0))
+          fields))
 
 (defn out-of-bounds? [p x-bounds y-bounds]
   (let [position (:position p)
@@ -43,7 +45,8 @@
 
 
 (defn update-particle* [p]
-  (let [flds @fields] (->> (submit-to-fields p @fields)
+  (let [flds @fields]
+    (->> (submit-to-fields p @fields)
          (corporum/move))))
 
 (defn update-particles*

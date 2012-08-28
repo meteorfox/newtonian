@@ -35,11 +35,11 @@
         s (utils/mag velocity)]
     (no-stroke)
     (fill-int (color
-               (* 66 s)
                166
                (/ (* 220 0.5) s)
+               (* 76 s)
                255))
-    (ellipse x y 3 3)))
+    (ellipse x y 4 4)))
 
 (defn draw []
   (background 8)

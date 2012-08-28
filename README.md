@@ -4,10 +4,15 @@ Particle System in Clojure using Quil.
 
 ![Particles](http://img525.imageshack.us/img525/3210/screenshotfrom201208252.png)
 
-
 Still work in progress.
 
 Based on https://github.com/jsoverson/JavaScript-Particle-System
+
+
+# Live performance
+
+![Newtonian Dance](http://www.youtube.com/watch?v=xiqWclsXdcc)
+
 
 ## Usage
 
@@ -51,7 +56,6 @@ or,
 
 ## TODO
 
-* Aggregate force of all fields in particles, right now one field influence at a time
 * Drag-and-drop support for Paritcle Emitters and Fields
 * Dynamic sizing and coloring of particles with GUI
 * Dynamic force field adjustment with GUI.
@@ -59,3 +63,4 @@ or,
 * Settings to change frame rate, window size, renderer, etc
 * Preferences to change background color, number of particles, color of fields and emitters.
 * Collapse particle system state in a map, to allow multiple particles systems. ???
+* ~~Aggregate force of all fields in particles, right now one field influence at a time~~

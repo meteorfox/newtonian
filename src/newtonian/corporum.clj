@@ -51,12 +51,14 @@
           x-comp (:x dist)
           y-comp (:y dist)
           field-mass (:mass f)
+          old-accel (:accel p)
           force (/ field-mass
                    (Math/pow
                     (+ (* x-comp x-comp) (/ field-mass 2.0)
                        (* y-comp y-comp) (/ field-mass 2.0))
                     1.5))]
-      (assoc p :accel (Vector2D. (* x-comp force) (* y-comp force)))))
+      (assoc p :accel (Vector2D. (+ (:x old-accel) (* x-comp force))
+                                 (+ (:y old-accel) (* y-comp force))))))
   Field
   (influence [f p]
     (influence p f)))
